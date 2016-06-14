@@ -14,7 +14,7 @@ module OmniAuth
 
       option :authorize_options, [:scope, :display, :auth_type]
 
-      uid { access_token.params[:id] }
+      uid { raw_info['id'] }
 
       info do
         {
