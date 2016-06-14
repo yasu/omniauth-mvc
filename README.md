@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+OmniAuth::Strategies::MVC is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: https://github.com/intridea/omniauth.
+
+Here's a quick example, adding the middleware to a Rails app in config/initializers/omniauth.rb:
+
+```
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :mvc, ENV['MVC_KEY'], ENV['MVC_SECRET']
+end
+```
+
+(See the example Sinatra app for full examples)[(https://github.com/yasu/omniauth-mvc/blob/master/example/config.ru] of both the server and client-side flows.
+
+Go to the example directory and execute the following command:
+
+```
+$ rackup -p 4567
+```
 
 ## Development
 
@@ -32,7 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omniauth-mvc.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yasu/omniauth-mvc.
 
 
 ## License

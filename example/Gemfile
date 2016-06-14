@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'json'
+gem 'omniauth-mvc'
+
+gem 'thin'
+group :development do
+  gem 'shotgun'
+end
