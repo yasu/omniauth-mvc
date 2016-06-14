@@ -26,13 +26,13 @@ OmniAuth::Strategies::MVC is simply a Rack middleware. Read the OmniAuth docs fo
 
 Here's a quick example, adding the middleware to a Rails app in config/initializers/omniauth.rb:
 
-```
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :mvc, ENV['MVC_KEY'], ENV['MVC_SECRET']
 end
 ```
 
-(See the example Sinatra app for full examples)[(https://github.com/yasu/omniauth-mvc/blob/master/example/config.ru] of both the server and client-side flows.
+[See the example Sinatra app for full examples](https://github.com/yasu/omniauth-mvc/blob/master/example/config.ru) of both the server and client-side flows.
 
 Go to the example directory and execute the following command:
 
