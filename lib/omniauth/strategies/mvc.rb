@@ -22,7 +22,7 @@ module OmniAuth
           :email             => raw_info['email'],
           :location          => raw_info['location'],
           :profile_image_url => raw_info['profile_image_url'],
-          :urrent_user_url   => raw_info['urrent_user_url']
+          :current_user_url  => raw_info['current_user_url']
         }
       end
 
